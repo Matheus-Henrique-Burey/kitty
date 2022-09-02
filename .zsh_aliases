@@ -1,1 +1,23 @@
-.zsh_aliases
+alias ssh="setsid -w ssh"
+alias vi="nvim"
+alias openUrl="bash ~/abreurl.sh"
+alias Mg="eval '$(ssh-agent -s)' && ssh-add ~/.ssh/id_ed25519"
+
+alias MEslint="npm i -D eslint eslint-plugin-import-helpers eslint-import-resolver-typescript prettier eslint-config-prettier eslint-plugin-prettier && npx eslint --init"
+
+# Node
+alias Mni="npm init && npm i express && npm i -D typescript @types/node ts-node-dev @types/express && npx tsc --init"
+
+# React
+alias Mcr="rm -rfv public/logo* public/manife* public/robots.txt src/App.test* src/App.css src/index.css src/logo.svg src/repor* src/setup*"
+alias Mrb="yarn add react-hook-form @hookform/resolvers yup axios react-router-dom @mui/material @emotion/react @emotion/styled" 
+alias Mui="yarn add @mui/material @emotion/react @emotion/styled"
+alias Myup="yup react-hook-form @hookform/resolvers axios"
+alias Mred="yarn add react-redux redux redux-thunk axios"
+
+# python
+alias Mpi="python -m venv venv && source venv/bin/activate"
+alias Mpa="source venv/bin/activate"
+alias Mpf="pip freeze > requirements.txt"
+alias Mpfr="pip install -r requirements.txt"
+alias MBlack="pip install pylint black flake8 pre-commit && pylint --generate-rcfile > .pylintcr && cp ~/.flake8 . && cp ~/.pre-commit-config.yaml . && pre-commit install"
