@@ -21,3 +21,12 @@ alias Mpa="source venv/bin/activate"
 alias Mpf="pip freeze > requirements.txt"
 alias Mpfr="pip install -r requirements.txt"
 alias MBlack="pip install pylint black flake8 pre-commit && pylint --generate-rcfile > .pylintcr && cp ~/.flake8 . && cp ~/.pre-commit-config.yaml . && pre-commit install"
+
+# Docker
+alias MD="sudo systemctl start docker"
+alias MDstart="docker compose start"
+alias MDrestart="docker compose restart"
+alias MDlog="docker logs --follow"
+
+#JOB
+alias JOB="cd bitbucket/sara-api"
