@@ -29,4 +29,4 @@ alias MDrestart="docker compose restart"
 alias MDlog="docker logs --follow"
 
 #JOB
-alias JOB="cd bitbucket/sara-api"
+alias JOB="cd Bitbucket/sara-api"
