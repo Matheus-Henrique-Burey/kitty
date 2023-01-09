@@ -10,10 +10,10 @@ alias Mni="npm init && npm i express && npm i -D typescript @types/node ts-node-
 
 # React
 alias Mcr="rm -rfv public/logo* public/manife* public/robots.txt src/App.test* src/App.css src/index.css src/logo.svg src/repor* src/setup*"
-alias Mrb="yarn add react-hook-form @hookform/resolvers yup axios react-router-dom @mui/material @emotion/react @emotion/styled" 
-alias Mui="yarn add @mui/material @emotion/react @emotion/styled"
-alias Myup="yup react-hook-form @hookform/resolvers axios"
-alias Mred="yarn add react-redux redux redux-thunk axios"
+alias Mrb="npm i react-hook-form @hookform/resolvers yup axios react-router-dom" 
+alias Mui="npm i @mui/material @emotion/react @emotion/styled"
+alias Myup="npm i yup react-hook-form @hookform/resolvers axios"
+alias Mred="npm i react-redux redux redux-thunk axios"
 
 # python
 alias Mpi="python -m venv venv && source venv/bin/activate"
