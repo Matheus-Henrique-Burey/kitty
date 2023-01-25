@@ -1,1 +1,1 @@
-# kitty
+# My alacritty terminal setup
