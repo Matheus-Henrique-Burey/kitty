@@ -29,4 +29,7 @@ alias MDrestart="docker compose restart"
 alias MDlog="docker logs --follow"
 
 #JOB
-alias JOB="cd Bitbucket/sara-api"
+alias JOB="cd ~/Bitbucket/sara-api"
+
+alias gbug="git checkout -b bugfix/SARA-"
+alias gfea="git checkout -b feature/SARA-"
