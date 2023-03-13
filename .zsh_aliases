@@ -33,9 +33,9 @@ alias JOB="cd ~/Bitbucket/sara-api"
 
 alias gbug(){
   FORMATED=$(echo $1 | sed "s/ /-/g") 
-  git checkout -b "bugfix/SARA-$FORMATED"
+  git checkout -b "bugfix/$FORMATED"
 }
 alias gfea(){
   FORMATED=$(echo $1 | sed "s/ /-/g") 
-  git checkout -b "feature/SARA-$FORMATED"
+  git checkout -b "feature/$FORMATED"
 }
