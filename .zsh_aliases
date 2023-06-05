@@ -30,11 +30,13 @@ alias MDlog="docker logs --follow"
 
 #JOB
 alias JOB="cd ~/Bitbucket/sara-api"
+alias chat="shell-genie ask"
 
 alias gbug(){
   FORMATED=$(echo $1 | sed "s/ /-/g") 
   git checkout -b "bugfix/$FORMATED"
 }
+
 alias gfea(){
   FORMATED=$(echo $1 | sed "s/ /-/g") 
   git checkout -b "feature/$FORMATED"
