@@ -1,4 +1,5 @@
 alias ssh="setsid -w ssh"
+alias ls="exa"
 alias vi="nvim"
 alias openUrl="bash ~/abreurl.sh"
 alias Mg="eval '$(ssh-agent -s)' && ssh-add ~/.ssh/id_ed25519"
@@ -16,8 +17,8 @@ alias Myup="npm i yup react-hook-form @hookform/resolvers axios"
 alias Mred="npm i react-redux redux redux-thunk axios"
 
 # python
-alias Mpi="python -m venv venv && source venv/bin/activate"
-alias Mpa="source venv/bin/activate"
+alias Mpi="python -m venv .venv && source .venv/bin/activate"
+alias Mpa="source .venv/bin/activate"
 alias Mpf="pip freeze > requirements.txt"
 alias Mpfr="pip install -r requirements.txt"
 alias MBlack="pip install pylint black flake8 pre-commit && pylint --generate-rcfile > .pylintcr && cp ~/.flake8 . && cp ~/.pre-commit-config.yaml . && pre-commit install"
@@ -32,12 +33,12 @@ alias MDlog="docker logs --follow"
 alias JOB="cd ~/Bitbucket/sara-api"
 alias chat="shell-genie ask"
 
-alias gbug(){
+gbug(){
   FORMATED=$(echo $1 | sed "s/ /-/g") 
   git checkout -b "bugfix/$FORMATED"
 }
 
-alias gfea(){
+gfea(){
   FORMATED=$(echo $1 | sed "s/ /-/g") 
   git checkout -b "feature/$FORMATED"
 }
