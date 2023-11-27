@@ -5,7 +5,7 @@ ZSH=/usr/share/oh-my-zsh/
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="gnzh" #"frontcube" "bira" "intheloop" "jispwoso" "jonathan" "simonoff" 
+ZSH_THEME="frontcube" #"frontcube" "bira" "intheloop" "jispwoso" "jonathan" gnzh
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
@@ -16,6 +16,7 @@ plugins=(
     git
     zsh-autosuggestions
     zsh-syntax-highlighting
+    poetry
 )
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
