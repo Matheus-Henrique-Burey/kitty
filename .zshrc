@@ -35,3 +35,7 @@ fi
 source $ZSH/oh-my-zsh.sh
 
 . /opt/asdf-vm/asdf.sh
+
+export ANDROID_SDK_ROOT=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
+export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
