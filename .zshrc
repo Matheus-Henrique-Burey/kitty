@@ -13,8 +13,9 @@ ZSH_THEME="intheloop" #"frontcube" "bira" "intheloop" "jispwoso" "jonathan" simo
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-    zsh-autosuggestions
-    zsh-syntax-highlighting
+  git
+  zsh-autosuggestions
+  zsh-syntax-highlighting
 )
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
@@ -32,12 +33,6 @@ fi
 
 source $ZSH/oh-my-zsh.sh
 
-<<<<<<< Updated upstream
-. /opt/asdf-vm/asdf.sh
-
 export ANDROID_SDK_ROOT=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
 export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
-=======
-. "$HOME/.confg/asdf/asdf.sh"
->>>>>>> Stashed changes
