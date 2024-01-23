@@ -17,7 +17,7 @@ alias MDrestart="docker compose restart"
 alias MDlog="docker logs --follow"
 
 #JOB
-alias JOB="cd ~/Desktop/alper-seguros && tmux new -s visie"
+alias JOB="cd ~/Desktop/alper-seguros"
 
 gbug(){
   FORMATED=$(echo $1 | sed "s/ /-/g") 

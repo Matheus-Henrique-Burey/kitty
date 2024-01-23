@@ -5,7 +5,7 @@ ZSH=/usr/share/oh-my-zsh/
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="intheloop" #"frontcube" "bira" "intheloop" "jispwoso" "jonathan" simonoff gnzh
+ZSH_THEME="frontcube" #"frontcube" "bira" "intheloop" "jispwoso" "jonathan" gnzh
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
@@ -13,9 +13,10 @@ ZSH_THEME="intheloop" #"frontcube" "bira" "intheloop" "jispwoso" "jonathan" simo
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
-  zsh-autosuggestions
-  zsh-syntax-highlighting
+    git
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+    poetry
 )
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
@@ -31,7 +32,14 @@ if [[ ! -d $ZSH_CACHE_DIR ]]; then
   mkdir $ZSH_CACHE_DIR
 fi
 
+if [ -z "$TMUX" ] && [ "$TERM_PROGRAM" = "alacritty" ]; then
+  tmux
+fi
+
+
 source $ZSH/oh-my-zsh.sh
+
+. /opt/asdf-vm/asdf.sh
 
 export ANDROID_SDK_ROOT=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
