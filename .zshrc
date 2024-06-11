@@ -36,13 +36,14 @@ if [ -z "$TMUX" ] && [ "$TERM_PROGRAM" = "alacritty" ]; then
   tmux
 fi
 
+if [[ -d /opt/asdf-vm ]]; then
+  source /opt/asdf-vm/asdf.sh
+fi
 
 source $ZSH/oh-my-zsh.sh
 
-source /opt/asdf-vm/asdf.sh
-
 ANDROID_SDK_ROOT=$HOME/Android/Sdk
-if [[ ! -d $ANDROID_SDK_ROOT ]]; then
+if [[ -d $ANDROID_SDK_ROOT ]]; then
   export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
   export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
 fi
