@@ -1,4 +1,4 @@
-alias ls="exa"
+alias ls="eza"
 alias ssh="setsid -w ssh"
 alias vi="nvim"
 alias openUrl="bash ~/abreurl.sh"

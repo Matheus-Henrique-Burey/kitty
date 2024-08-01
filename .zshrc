@@ -23,6 +23,7 @@ plugins=(
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
+source $ZSH/oh-my-zsh.sh
 
 # Aliases
 . ~/.zsh_aliases
@@ -40,10 +41,10 @@ if [[ -d /opt/asdf-vm ]]; then
   source /opt/asdf-vm/asdf.sh
 fi
 
-source $ZSH/oh-my-zsh.sh
-
-ANDROID_SDK_ROOT=$HOME/Android/Sdk
-if [[ -d $ANDROID_SDK_ROOT ]]; then
+export ANDROID_SDK_ROOT=$HOME/Android/Sdk
+export ANDROID_HOME=$HOME/Android/Sdk
+export EXPO_APPLE_APP_SPECIFIC_PASSWORD=""
+if [[ ! -d $ANDROID_SDK_ROOT ]]; then
   export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
   export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
 fi
