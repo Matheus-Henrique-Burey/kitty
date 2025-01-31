@@ -18,17 +18,13 @@ alias MDrestart="docker compose restart"
 alias MDlog="docker logs --follow"
 
 #JOB
-alias JOB="cd ~/Git/alper-seguros"
-alias JOBA="cd ~/Git/alper-seguros-app"
-alias CONP="sudo ssh -i ~/.ssh/id_ed25519_visie matheus@alperseguros.visie.com.br"
-alias CONS="sudo ssh -i ~/.ssh/id_ed25519_visie matheus_burei@alper-seguros.a.visie.link"
 
 gbug(){
-  FORMATED=$(echo $1 | sed "s/ /-/g") 
+  FORMATED=$(echo $1 | tr '[:upper:]' '[:lower:]' | sed "s/ /-/g") 
   git checkout -b "bugfix/$FORMATED"
 }
 
 gfea(){
-  FORMATED=$(echo $1 | sed "s/ /-/g") 
+  FORMATED=$(echo $1 | tr '[:upper:]' '[:lower:]' | sed "s/ /-/g") 
   git checkout -b "feature/$FORMATED"
 }
